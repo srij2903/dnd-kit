@@ -51,7 +51,7 @@
     "build:hooks": "tsup --entry.hooks src/hooks/index.ts",
     "build:sortable": "tsup --entry.sortable src/sortable/index.ts",
     "build:utilities": "tsup --entry.utilities src/utilities/index.ts",
-    "dev": "bun build:utilities --watch & bun build:hooks --watch & bun build:core --watch & bun build:sortable --watch",
+    "dev": "bun build:utilities --watch && bun build:hooks --watch && bun build:core --watch && bun build:sortable --watch",
     "lint": "TIMING=1 eslint src/**/*.ts* --fix",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
