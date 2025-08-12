@@ -69,7 +69,7 @@
     "build:plugins": "tsup --entry.debug src/plugins/debug/index.ts --outDir ./plugins",
     "build:sortable": "tsup --entry.sortable src/sortable/index.ts",
     "build:utilities": "tsup --entry.utilities src/utilities/index.ts",
-    "dev": "bun build:utilities --watch & bun build:core --watch & bun build:sortable --watch & bun build:modifiers --watch & bun build:plugins --watch",
+    "dev": "bun build:utilities --watch && bun build:core --watch && bun build:sortable --watch && bun build:modifiers --watch && bun build:plugins --watch",
     "lint": "TIMING=1 eslint src/**/*.ts* --fix",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
